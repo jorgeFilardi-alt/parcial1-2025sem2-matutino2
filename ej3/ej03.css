@@ -29,6 +29,13 @@ body {
   background: #e0e000;
   /* on */
   position: absolute;
+  opacity: 0.5;
+}
+
+.segment.on {
+  background-color: red;
+  opacity: 1;
+  box-shadow: red;
 }
 
 /* Diseño de los 7 segmentos. Por favor no modificar*/

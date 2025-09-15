@@ -4,3 +4,169 @@
   font-weight: 700;
   font-style: normal;
 }
+
+
+@font-face {
+  font-family: 'Rufina';
+  src: url('./assets/fonts/Rufina-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: 'Rufina';
+  background: #fff;
+  color: #111;
+}
+
+.titulo {
+  background: yellow;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 200px 60px 200px;
+}
+
+.titulo-titulo{
+  font-family: 'Rufina';
+  font-weight: 1000;
+  font-size: 3.5rem;
+  color: rgb(251, 79, 49);
+  line-height: 1;
+}
+
+.titulo-texto{
+  flex: 1;
+}
+
+.titulo-desc {
+  color: rgb(251, 79, 49);
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+.titulo-logo {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.titulo-logo img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+}
+
+main {
+  background: #fff;
+  padding: 0 0 50px 0;
+}
+
+section.menu-seccion {
+  max-width: 1000px;
+  margin: 0 auto 60px auto;
+  padding: 0 24px;
+}
+
+.menu-titulo {
+  font-family: 'Rufina';
+  font-weight: 1000;
+  font-size: 3.5rem;
+  text-align: center;
+  margin: 60px 0 0 0;
+}
+
+.menu-titulo2 {
+  text-align: center;
+  font-size: 1rem;
+  color: gray;
+  margin-bottom: 50px;
+  margin-top: 8px;
+}
+
+.menu-contenido {
+  display: flex;
+  align-items: flex-start;
+  gap: 50px;
+  margin-top: 30px;
+}
+
+.menu-img {
+  flex: 1 1 200px;
+  max-width: 320px;
+}
+
+.menu-img img{
+  width: 100%;
+  background: white;
+}
+
+.menu-items {
+  flex: 2 1 0;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  border-top: 3px dotted;
+  padding-top: 20px;
+}
+
+.menu-item-titulo {
+  font-family: 'rufina';
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.menu-item-descripcion {
+  font-size: 1rem;
+  color: gray;
+  margin: 0;
+}
+
+.menu-item-precio {
+  font-family: 'Rufina';
+  font-weight: 1000;
+  font-size: 1rem;
+  margin-left: 30px;
+}
+
+@media (max-width: 900px) {
+  .titulo {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px 30px 30px 30px;
+  }
+  .titulo-logo {
+    justify-content: flex-start;
+    margin-top: 30px;
+  }
+  .menu-contenido {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .menu-img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .titulo-titulo {
+    font-size: 2rem;
+  }
+  .menu-titulo {
+    font-size: 1.5rem;
+  }
+  .menu-contenido{
+    gap: 10px;
+  }
+}
+
+
+
+
